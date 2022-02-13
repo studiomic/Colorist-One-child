@@ -1,0 +1,114 @@
+// sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+@use "../base/index" as ex;
+
+.down {
+	// position: relative;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	bottom: 20px;
+	// text-align: center;
+	// bottom: 5vh;
+	a {
+		// border: 1px solid tomato;
+		// border: 1px solid cyan;
+		display: block;
+		width: 20px;
+		height: 100px;
+		margin-left: -10px;
+		text-decoration: none;
+		color: rgba(ex.$col-Fa,.5);
+		&:hover {
+			color: rgba(ex.$col-Fa,.9);
+			transition-duration: 1s;
+		}
+	}
+
+	// background: #000;
+	// z-index:100;
+	// position: relative;
+	// transform: rotateZ(-90deg);
+	// display: block;
+	// padding: 2rem 0;
+	span {
+		display: block;
+		letter-spacing: .5rem;
+		transform: translateY(-110px) rotateZ(-90deg);
+	}
+	svg {
+		fill: currentColor;
+		display: block;
+		transform: scale(0.6) translateX(-20px) translateY(-120px) rotateZ(-90deg);
+	}
+}
+
+
+//スクロールダウンのためのCSS
+//9-1-2 丸が動いてスクロールを促す
+
+//スクロールダウン全体の場所
+.scrolldown {
+	position: absolute;
+	// border: 1px solid cyan;
+	// border: 1px solid tomato;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+}
+
+//丸の描写
+.scrolldown::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -4px;
+	//丸の形状
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: rgba(ex.$col-Fa,.7);
+	animation:// /*丸の動き1.6秒かけて透過し、永遠にループ*/
+	circlemove 1.6s ease-in-out infinite,
+	cirlemovehide 1.6s ease-out infinite;
+}
+
+//線の描写
+.scrolldown::after{
+	content:'';
+	//描画位置
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	//線の形状*
+	width: 1px;
+	height: 70px;
+	background: rgba(ex.$col-Fa,.5);
+}
+
+//下からの距離が変化して丸の全体が上から下に動く
+@keyframes circlemove{
+	0% {
+		bottom: 65px;
+	}
+	100% {
+		bottom: -5px;
+	}
+}
+
+//上から下にかけて丸が透過→不透明→透過する
+@keyframes cirlemovehide{
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0.9;
+	}
+	100% {
+		opacity: 0;
+	}
+}

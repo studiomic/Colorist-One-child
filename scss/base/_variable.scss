@@ -1,0 +1,140 @@
+// sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+// @use "./index" as ex;
+// @use "index" as ex;
+
+:root {
+// Front Heading Color
+	--front--title-post-color: #7e8ea2;
+	--front--title-about-color: #978794;
+	--front--title-info-color: #8c8f6d;
+	--front--title-content-color: #3e4951;
+
+
+// Front Color
+	--front--footer-nav-color: #bec4da;
+	--front--info-color:#999;
+	--front--copyright-color: #757881;
+
+// Front Background Color
+	--front--background-color: #141414;
+	--front--container-background-color: rgba(#141414,.8);
+	// --front--container-background-color: rgba(ex.$col-14,.8);
+	--front--posts-background-color: #191919;
+	--front--info-background-color: #292C30;
+
+// Repeat Frequent Color : High Frequency : Heavy Rotation
+	--Color--text-base: #242424;
+	--Color--Asahanada: #84b9cb;
+	--Color--Crimson: #DC143C;
+	--Color--Fa : #fafafa;
+	// --Color--14 : #141414;
+
+// Front Font Size
+	--font-size-base: 16px;
+	--font-size-default: 1rem;
+	--font-size-small: calc(var(--font-size-default) * 0.875); //14px
+	--font-size-mid: calc(var(--font-size-default) * 1.125); //18px
+	--font-size-large: calc(var(--font-size-default) * 1.25); //20px
+	--front--title-size: calc(var(--font-size-default) * 3.75); //60px
+
+	// --font-size-large:40px;
+	// --font-size-large: calc(var(--font-size-default) * var(--ratio-1));
+
+	// --front--title-size: calc(var(--font-size-default) * 4.75);
+	// --front--title-size: 60px;
+
+
+// Front Font Family
+--front--Family-Base: HelveticaNeue-Light,'Helvetica Neue Light',sans-serif;
+--font--Family-JP: 'Noto Sans JP', system-ui, sans-serif;
+--front--Family-Min: 'Noto Serif JP', serif;
+--front--Family-EN: 'Verdana', sans-serif;
+--front--Family-OS: 'Open Sans', sans-serif;
+--front--Family-Lato: 'Lato', 'Open Sans', sans-serif;
+--front--Family-Sis: system-ui, sans-serif;
+--front--Family-Geo: Georgia, serif;
+
+
+
+
+
+
+
+
+// Font Feature Settings
+	--font-feature-pkna: "pkna" 1;
+	--font-feature-palt: "palt" 1;
+
+
+// text-transform: uppercase;
+
+
+}
+
+
+// background: hsl(0,0%,100%);
+// background: #E1ABAE;
+// background: #EBBCBF;
+// background: rgba(ex.$blue,.1);
+// background: rgba(#222,.5);
+// background: rgba(#8FB8C9,.9);
+// background: rgba(#fff,.9);
+// background: rgba(#B2D3E0,.5);
+// background: rgba(#0f0f0f,.9);
+// color: ex.$col-Fa;
+// color: hsl(0,0%,60%);
+// padding: 4rem;
+// margin: 0 0 0 40px;
+
+	// background: rgba(#E1ABAE,.5);
+
+
+
+// 	/* Color */
+// 	--color-background: hsl(48, 48%, 93%);
+// 	--color-background-tone: hsl(48, 48%, 90%);
+// 	--color-on-background: hsl(0, 0%, 15%);
+// 	--color-on-background-tint: hsl(0, 0%, 45%);
+// 	--color-link: hsl(213, 96%, 45%);
+//
+// 	/* Font Size */
+// 	--font-size-default: 1rem;
+// 	--font-size-small: calc(var(--font-size-default) / var(--ratio-1));
+// 	--font-size-large: calc(var(--font-size-default) * var(--ratio-1));
+// 	--font-size-huge: calc(var(--font-size-large) * var(--ratio-1));
+//
+// 	/* Line Height */
+// 	--line-height-default: calc(var(--ratio-2));
+//
+// 	/* Ratio */
+// 	--ratio-1: 1.25;
+// 	--ratio-2: calc(var(--ratio-1) * var(--ratio-1));
+// 	--ratio-4: calc(var(--ratio-2) * var(--ratio-2));
+//
+// 	/* Space */
+// 	--space-default: calc(var(--ratio-2) * 1rem);
+// 	--space-small: calc(var(--space-default) / var(--ratio-2));
+// 	--space-large: calc(var(--space-default) * var(--ratio-1));
+// 	--space-tiny: calc(var(--space-small) / var(--ratio-2));
+// 	--space-huge: calc(var(--space-large) * var(--ratio-2) * var(--ratio-1));
+// 	--space-gargantuan: calc(var(--space-huge) * var(--ratio-2) * var(--ratio-1));
+// 	--space-left-body: clamp(
+// 		0px,
+// 		(100vw - var(--space-small) - var(--width-column) - var(--space-small) - 20px) / 2,
+// 		var(--ratio-4) * var(--ratio-4) * var(--ratio-2) * 1vw
+// 	);
+//
+// 	/* Width */
+// 	--width-column: 88ch;
+// }
+//
+// @media (prefers-color-scheme: dark) {
+// 	:root {
+// 		--color-background: hsl(228, 48%, 6%);
+// 		--color-background-tone: hsl(228, 48%, 15%);
+// 		--color-on-background: hsl(0, 0%, 93%);
+// 		--color-on-background-tint: hsl(0, 0%, 75%);
+// 		--color-link: hsl(213, 96%, 78%);
+// 	}

@@ -1,0 +1,101 @@
+// sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+@use "../base/index" as ex;
+
+footer {
+	position: relative;
+	margin-top: 100px;
+	background: var(--front--background-color);
+	color: var(--front--copyright-color);
+	canvas {
+		position: absolute;
+		top: -150px;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	h2 {
+		// position: relative;
+		position: absolute;
+		color: var(--front--title-content-color);
+		font-size: var(--front--title-size);
+		font-family: var(--front--Family-Min);
+		display: block;
+		top: -80px;
+		font-weight: bold;
+		line-height: 1;
+		z-index: 2;
+	}
+
+}
+
+.back {
+	position: relative;
+	display: block;
+	cursor: grab;
+	z-index: 3;
+	svg {
+		fill: rgba($color: #3e4951, $alpha: 0.5);
+		// fill: rgba($color: #000, $alpha: 0.8);
+		// width: 218px;
+		// width: 180px;
+	}
+	h4 {
+		z-index: 1;
+		margin-top: -80px;
+		img {
+			opacity: .7;
+			filter: invert(100%);
+			width: 200px;
+		}
+	}
+}
+
+@media only screen and (max-width:63.99875em) {
+	footer {
+		padding: 0 20px 30px;
+		p {
+			text-align: center;
+		}
+		div {
+			text-align: center;
+		}
+	}
+}
+
+
+
+@media only screen and (min-width:64em) {
+	footer {
+		padding: 0 45px 45px;
+		div {
+			position: absolute;
+			top: -120px;
+			right: 45px;
+			// margin: -400px 0 0 auto;
+			width: 200px;
+			height: 170px;
+		}
+		p {
+			text-align: right;
+			margin-top: -2rem;
+		}
+	
+	}
+}
+
+
+	// div {
+	// 	// position: absolute;
+	// 	border: 1px solid cyan;
+	// 	position: relative;
+	// 	margin-top: -100px;
+	// 	// top: -120px;
+	// 	// top: 0px;
+	// 	// right: 25px;
+	// 	// // right: 0px;
+	// 	// height: 170px;
+	// 	// bottom: 0;
+	// 	// width: 218px;
+	// 	// text-align: right;

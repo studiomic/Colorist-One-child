@@ -1,0 +1,35 @@
+// sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+@use 'base/variable';
+@use 'base/normalize';
+@use 'front/body';
+
+@use 'front/intro';
+@use 'components/scroll';
+
+@use 'front/layout';
+@use 'front/main';
+@use 'front/blog-posts';
+
+@use 'components/button';
+@use 'front/breakthrough';
+@use 'front/info';
+
+@use 'layout/footer-flat';
+@use 'components/hover-line';
+
+
+
+
+
+
+
+
+// @use 'components/about';
+// @use 'components/button';
+// @use 'components/layout';
+// @use "pages/intro";
+// @use "pages/works";
+// @use "pages/info";
+// @use "pages/contact";

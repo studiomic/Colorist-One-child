@@ -1,0 +1,79 @@
+// sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+@use "../base/index" as ex;
+
+//Front About Button
+.about {
+	a {
+		transition: ease .4s;
+		span {
+			position: relative;
+			// z-index: 3;
+			// color: whitesmoke;
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}
+
+.skew {
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		// bottom: 0;
+		left: -130%;
+		// background:#333;
+		background: rgba(#978794,.4);
+		// border: 1px solid #000; //rgba(#978794,.4);
+		// border: 0;
+		width: 120%;
+		height: 100%;
+		transform: skewX(-25deg);
+	}
+	&:hover {
+		// color: #000;
+		// border: 1px solid #978794;
+		&::before {
+		animation: skewbtn .5s forwards;
+		//*アニメーションの名前と速度を定義*/
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+@keyframes skewbtn {
+	100% {
+		left:-10%;///*画面の見えていない左から右へ移動する終了地点*/
+	}
+}
+
+
+		// position: relative;
+		// overflow: hidden;
+		// text-decoration: none;
+		// display: inline-block;
+		// border: 1px solid rgba(#978794,.6);
+		// background: rgba(ex.$col-14,.5);
+		// margin: 0 20px 0 auto;
+		// padding: 1rem 4rem;
+		// text-align: center;
+		// color: var(--front--title-about-color);
+		// white-space: nowrap;
+		
+
+
+// background: rgba(ex.$col-14,.9);
+			// background: #EBBCBF;
+			// background: #E1ABAE;
+
+		// color: ex.$col-F5;

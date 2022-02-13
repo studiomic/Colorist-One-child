@@ -1,0 +1,21 @@
+@use '../tools/global';
+@use '../tools/components/button';
+
+// Font Size
+$font-size-base: 16px !default;
+$font-size-large: 18px !default;
+$font-size-medium: 14px !default;
+$font-size-small: 12px !default;
+
+.c-button {
+  padding: button.$spacing-pc;
+  font-size: $font-size-base;
+
+  @include global.mq(lg) {
+    padding: button.$spacing-mobile;
+  }
+}
+
+.c-button {
+  @include button.generator;
+}

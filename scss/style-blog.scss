@@ -1,0 +1,36 @@
+// sass --watch --no-source-map scss/style-blog.scss:asset/css/style-front.css
+// sass --watch --no-source-map scss:asset/css
+
+//ブロク用ファイルだったが共通レイアウトはStyle.cssに変更
+
+// @use 'base/variable';
+// @use 'base/normalize';
+// @use 'layout/body';
+// @use 'layout/header';
+
+// @use 'layout/footer';
+// @use 'components/hover-line';
+
+
+// @use 'blog/entries';
+
+
+
+// @use "project/blog-reset";
+// @use "project/blog-form";
+// @use "project/blog";
+
+
+// /* Code Components
+// ----------------------------------------------------*/
+// @use "code/primer-val";
+// @use "code/normalize";
+// @use "code/primer-btn";
+// @use "code/primer-tooltips";
+// @use "code/primer-plus";
+
+// @use "components/blockquote";
+// @use "components/table-of-content"; //mokuji
+
+
+// @use "viewport/blog-media";

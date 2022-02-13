@@ -1,0 +1,100 @@
+// 3分割FlexBoxだったデザインを単一の_footer-flat.scssへ移行
+// 未使用になる予定
+
+@use "../base/index" as ex;
+
+//* BODY FOOTER
+//----------------------------------------------------*/
+.pageBottom {
+	background: ex.$footer-Bg-color;
+	// background: hsl(0,0%,95%);
+	// background: #f6f6f6;
+	width: 100%;
+	color: ex.$col-66;
+	display: grid;
+	grid-template-rows: auto;
+	gap: 0;
+	text-transform: uppercase;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: ex.$col-66;
+		&:hover, &:active, &:focus {
+			color: hsl(0,0%,60%);
+		}
+	}
+	.left,.right {
+		font-family: ex.$fontFamilyEN;
+		font-size: .8rem;
+	}
+	.center {
+		letter-spacing: 0.2em;
+		font-family: HelveticaNeue-Light, "Helvetica Neue Light", sans-serif;
+	}
+}
+//* MIC FACE SVG */
+.BackRoot {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: 1em;
+	height: 1em;
+	top: -0.1em;
+	font-size: 1.6em;
+	margin-right: .2em;
+	fill: currentColor;
+}
+
+@media only screen and (max-width:63.99875em) {
+	.pageBottom {
+
+		grid-template-areas:
+			"center"
+			"right";
+		.left {
+			display: none;
+		}
+		.right {
+			padding-bottom: 1rem;
+		}
+		.center {
+			padding: 1rem 1rem .2rem;
+		}
+	}
+}
+
+@media only screen and (min-width:64em) {
+	.pageBottom {
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-areas:
+			"left center right";
+			// div {
+			// 	border:1px solid #fff;
+			// }
+
+		.left,.right {
+			padding: 2.5rem 2rem;
+			// width: 50%;
+		}
+		.left {
+			text-align: left;
+		}
+		.right {
+			text-align: right;
+		}
+		.center {
+			letter-spacing: 0.2em;
+			font-size: 1.2rem;
+			padding: 1.5rem 0;
+			// width: 60%;
+		}
+	}
+}
+
+
+// position: fixed;
+// display: none;
+// border: 5px solid rgba(#333,1);
+// border: 8px solid #ccc;
+// display: none;
+// opacity: 0;

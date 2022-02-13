@@ -1,0 +1,63 @@
+// sass --watch --no-source-map scss/style.scss:asset/css/style.css
+// sass --watch --no-source-map scss:asset/css
+
+$fillcolor: rgba(126, 142, 162, 1);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f0f0f0;
+	// background: $fillcolor;
+}
+header {
+	// padding: 1rem 1rem 0 3rem;
+	// text-align: center;
+	// margin-bottom: -140px;
+	position: relative;
+	// z-index: 1;
+	// background: #84b9cb;
+	// background-color: var(--front--background-color);
+	h1 {
+		position: relative;
+		z-index: 3;
+	}
+	img {
+		// width: 200vw;
+		width: 18vw;
+		width: 250px;
+	}
+
+}
+
+// .rainy {
+// 	position: relative;
+// 	z-index: 2;
+// 	opacity: 1.9;
+// 	height: 200px;
+// }
+
+.wave {
+	position: relative;
+	z-index: 1;
+	// border: 2px solid tomato;
+	display: block;
+	width: 100%;
+	height: 300px;
+	padding-top: 100px;
+	position: relative;
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1706 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(126, 142, 162, 1)" d="M 0 0 C 2 0 -6 90 -4 90 L -4 90 L -4 0 L 0 0 Z" stroke-width="2"></path> <path fill="rgba(126, 142, 162, 1)" d="M -5 90 C 121.5 90 121.5 158 248 158 L 248 158 L 248 0 L -5 0 Z" stroke-width="0"></path> <path fill="rgba(126, 142, 162, 1)" d="M 247 158 C 398.5 158 398.5 68 550 68 L 550 68 L 550 0 L 247 0 Z" stroke-width="0"></path><path fill="rgba(126, 142, 162, 1)" d="M 549 68 C 707.5 68 707.5 136 866 136 L 866 136 L 866 0 L 549 0 Z" stroke-width="0"></path><path fill="rgba(126, 142, 162, 1)" d="M 865 136 C 992 136 992 167 1119 167 L 1119 167 L 1119 0 L 865 0 Z" stroke-width="0"></path><path fill="rgba(126, 142, 162, 1)" d="M 1118 167 C 1251.5 167 1251.5 121 1385 121 L 1385 121 L 1385 0 L 1118 0 Z" stroke-width="0"></path><path fill="rgba(126, 142, 162, 1)" d="M 1384 121 C 1478 121 1478 66 1572 66 L 1572 66 L 1572 0 L 1384 0 Z" stroke-width="0"></path><path fill="rgba(126, 142, 162, 1)" d="M 1571 66 C 1613 66 1613 45 1655 45 L 1655 45 L 1655 0 L 1571 0 Z" stroke-width="0"></path><path fill="rgba(126, 142, 162, 1)" d="M 1654 45 C 1680 45 1680 0 1706 0 L 1706 0 L 1706 0 L 1654 0 Z" stroke-width="0"></path></svg>');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top left;
+	color: white;
+	// margin-bottom: -45px;
+// background-size: contain;
+}
+
+@media (max-width:1705px) {
+ .wave {
+   background-size: contain;
+ }
+}
