@@ -13,7 +13,7 @@ footer {
 		top: -150px;
 		left: 0;
 		width: 100%;
-		z-index: 1;
+		// z-index: 1;
 	}
 	h2 {
 		// position: relative;
@@ -27,7 +27,6 @@ footer {
 		line-height: 1;
 		z-index: 2;
 	}
-
 }
 
 .back {
@@ -59,11 +58,20 @@ footer {
 			text-align: center;
 		}
 		div {
+			margin: 0 auto;
+			// border: 1px solid red;
 			text-align: center;
+			width: 200px;
 		}
 	}
-}
+	.back {
+		padding-bottom: 50px;
+		svg {
+			width: 70%;
+		}
+	}
 
+}
 
 
 @media only screen and (min-width:64em) {

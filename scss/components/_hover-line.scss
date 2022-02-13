@@ -4,18 +4,10 @@
 @use "../base/index" as ex;
 
 .nav {
-    // border: 1px solid tomato;
-    // background: var(--front--background-color);
-
     position: relative;
 	font-size: var(--font-size-large);
 	list-style: none;
-	// font-size: var(--font-size-mid);
-	// font-size: 24px;
-	// margin-left: 1rem;
-    // margin: 1rem;
-	// z-index: 2;
-    // width: 100%;
+    padding-left: 1rem;
 }
 
 // BOX Element
@@ -69,3 +61,12 @@
 .nav li a:nth-child(1) {
     margin-right: 5rem;
 }
+    // border: 1px solid tomato;
+    // background: var(--front--background-color);
+
+	// font-size: var(--font-size-mid);
+	// font-size: 24px;
+	// margin-left: 1rem;
+    // margin: 1rem;
+	// z-index: 2;
+    // width: 100%;
