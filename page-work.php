@@ -18,5 +18,5 @@
 			<?php endwhile; endif; wp_reset_postdata(); ?>
 		</dl>
 	</section>
-
-<?php get_template_part( 'footer-only' ); ?>
+</main>
+<?php get_footer(); ?>

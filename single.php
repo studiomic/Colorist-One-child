@@ -45,5 +45,9 @@ while ( have_posts() ) :
 		)
 	);
 endwhile; // End of the loop.
+?>
+</main>
+<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
-get_footer();
+
+<?php get_footer(); ?>

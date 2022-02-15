@@ -8,9 +8,6 @@
  * @since Colorist-One 1.0.0
  */
 ?>
-</main>
-
-<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 <footer>
 		<h2>Contents</h2>

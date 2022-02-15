@@ -9,4 +9,5 @@
 		the_content();
 	endwhile; ?>
 	</section>
-<?php get_template_part( 'footer/footer-nowidgets' ); ?>
+	</main>
+<?php get_footer(); ?>
