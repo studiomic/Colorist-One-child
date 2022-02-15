@@ -36,8 +36,10 @@
 	--font-size-default: 1rem;
 	--font-size-small: calc(var(--font-size-default) * 0.875); //14px
 	--font-size-mid: calc(var(--font-size-default) * 1.125); //18px
-	--font-size-large: calc(var(--font-size-default) * 1.25); //20px
+	--font-size-large: calc(var(--font-size-default) * 1.25); //20px   
 	--front--title-size: calc(var(--font-size-default) * 3.75); //60px
+	--page--title-size: calc(var(--font-size-default) * 2.25); //36px
+
 
 	// --font-size-large:40px;
 	// --font-size-large: calc(var(--font-size-default) * var(--ratio-1));
