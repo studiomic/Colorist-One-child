@@ -38,20 +38,35 @@
 </footer>
 <?php wp_footer(); ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script> -->
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+<script src="/asset/js/index.js"></script>
 
 <script src="/asset/js/clipboard.min.js"></script>
-<script src="/asset/js/code.js"></script>
 <script src="/asset/js/demos.js"></script>
 <script src="/asset/js/snippets.js"></script>
 <script src="/asset/js/tooltips.js"></script>
-<script src="/asset/js/index.js"></script>
+
+
+
+
+
+<!-- <script src="/asset/js/code.js"></script> -->
+
 <script>hljs.initHighlightingOnLoad();</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
 <script src="/asset/js/wave.js"></script>
 
 
