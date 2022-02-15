@@ -17,8 +17,8 @@
 	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 	<?php wp_head(); ?>
 	<!-- jquery & iScroll -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script> -->
 	<!-- drawer.js -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script> -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">

@@ -1,0 +1,39 @@
+
+@use "../base/index" as ex;
+
+/* input & Dark mode
+----------------------------------------------------*/
+button,input,optgroup,select,textarea {
+	color: inherit;
+	font: inherit;
+}
+
+input[type=search] {
+	background: ex.$col-F;
+	color: ex.$text-color;
+	padding: .8rem;
+	outline: 0;
+	border-radius: 4px 0 0 4px;
+	border: 2px solid ex.$gray90;
+}
+
+input[type=button],
+input[type=submit] {
+	color: ex.$col-Fa;
+	font-size: 1rem;
+	padding: 0 1rem;
+	// color: ex.$text-color;
+	// padding: .5rem;
+	outline: 0;
+	border: 0;
+	border-radius: 0 4px 4px 0;
+	background: ex.$gray20;
+	border: 2px solid ex.$gray20;
+	cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+	input[type=search] {
+		background: ex.$col-F;
+	}
+}

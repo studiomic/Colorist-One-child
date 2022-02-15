@@ -1,0 +1,149 @@
+
+@use "primer-val" as pv;
+
+.tooltipped {
+	position: relative;
+	&::before,&::after {
+		position: absolute;
+		z-index: 1;
+		display: none;
+		display: block;
+	}
+}
+
+// This is the tooltip bubble
+// font: normal normal 11px/1.5 $body-font;
+.tooltipped::after {
+	padding: pv.$em-spacer-5 pv.$em-spacer-6;
+	font: normal normal 1rem/1 pv.$body-font;
+	-webkit-font-smoothing: subpixel-antialiased;
+	color: pv.$tooltip-text-color;
+	text-align: center;
+	white-space: pre;
+	pointer-events: none;
+	content: attr(aria-label);
+	background: pv.$tooltip-background-color;
+	border-radius: pv.$border-radius;
+	opacity: 0;
+	// opacity: 1;
+
+	// text-decoration: none;
+	// text-shadow: none;
+	// text-transform: none;
+	// letter-spacing: normal;
+	// word-wrap: break-word;
+}
+
+// This is the tooltip arrow
+.tooltipped::before {
+	content: '';
+	width: 0;
+	height: 0;
+	color: pv.$tooltip-background-color;
+	pointer-events: none;
+	border: 8px pv.$border-style transparent;
+	opacity: 0;
+	opacity: 1;
+}
+
+// delay animation for tooltip
+@keyframes tooltip-appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+// This will indicate when we'll activate the tooltip
+.tooltipped:hover,
+.tooltipped:active,
+.tooltipped:focus {
+	&::before,
+	&::after {
+		display: inline-block;
+		text-decoration: none;
+		animation-name: tooltip-appear;
+		animation-duration: pv.$tooltip-duration;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-out;
+		animation-delay: pv.$tooltip-delay;
+	}
+}
+
+// Tooltips above the object
+// .tooltipped-n,
+// .tooltipped-ne,
+.tooltipped-nw {
+	&::after {
+		right: 40%;
+		bottom: 100%;
+		margin-bottom: 6px;
+	}
+	&::before {
+		top: -7px;
+		right: 50%;
+		bottom: auto;
+		margin-right: -6px;
+		border-top-color: pv.$tooltip-background-color;
+	}
+}
+
+.tooltipped-nw::after {
+	margin-right: -(pv.$spacer-3);
+}
+
+
+
+// .tooltipped-ne {
+// 		&::after {
+// 				right: auto;
+// 				left: 50%;
+// 				margin-left: -$spacer-3;
+// 		}
+// }
+// .tooltipped-se {
+// 		&::after {
+// 				right: auto;
+// 				left: 50%;
+// 				margin-left: -$spacer-3;
+// 		}
+// }
+
+// .tooltipped-sw::after {
+// 		margin-right: -$spacer-3;
+// }// Tooltipped south
+// .tooltipped-s,
+// .tooltipped-se,
+// .tooltipped-sw {
+// 		&::after {
+// 				top: 100%;
+// 				right: 50%;
+// 				margin-top: 6px;
+// 		}
+//
+// 		&::before {
+// 				top: auto;
+// 				right: 50%;
+// 				bottom: -7px;
+// 				margin-right: -6px;
+// 				border-bottom-color: $tooltip-background-color;
+// 		}
+// }
+//
+// .tooltipped-no-delay:hover,
+// .tooltipped-no-delay:active,
+// .tooltipped-no-delay:focus {
+// 	&::before,&::after {
+// 		animation-delay: 0s;
+// 	}
+// }
+
+// .tooltipped-multiline:hover,
+// .tooltipped-multiline:active,
+// .tooltipped-multiline:focus {
+// 		&::after {
+// 				display: table-cell;
+// 		}
+// }

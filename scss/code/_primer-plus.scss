@@ -1,0 +1,191 @@
+
+// @use "../variables/index" as ex;
+@use "../base/index" as ex;
+@use "primer-val" as pv;
+
+//* CLIPPY BUTTON
+//----------------------------------------------------*/
+.clippy {
+	position: relative;
+	// margin-top: -3px;
+	// top: 3px;
+}
+
+
+//* INPUT
+//----------------------------------------------------*/
+$cpbtn-border: red;//#666;
+$cpbtn-botton-border: #666;
+$form-control-shadow: inset 0 1px 2px rgba(pv.$black, 0.075);
+$btn-input-focus-shadow: 0 0 0 0.2em rgba(pv.$blue, 0.3);
+
+@mixin cpbtn-base() {
+	display: flex;
+	width: 100%;
+	max-width: 100%;
+	margin: 2rem 0;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	input[type=text] {
+		font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;
+		// padding: .3rem .5rem;
+		padding: .6rem;
+		color: #ddd;
+		border-right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+}
+.cpbtn,.cpbtnw {
+	@include cpbtn-base;
+
+}
+
+.cpbtnw {
+	input[type=text] {
+		border-color: pv.$gray-300;
+		box-shadow: $form-control-shadow;
+		background: ex.$col-Fa;
+		color: #666;
+	}
+}
+
+.cpbtn {
+	input[type=text] {
+		color: #eee;
+		background: #2b303b;//3f3f3f;
+		border-color: #2b303b;//$cpbtn-border;
+	}
+}
+
+
+
+pre.wp-block-preformatted,
+.wp-block-code {
+	border: 1px solid #28303d;
+	padding: 20px;
+}
+
+pre.wp-block-code.none {
+	// border-color: transparent;
+	// border: 1px solid #28303d;
+	padding: 0;
+	code {
+		padding: 20px;
+		color: ex.$text-color;
+		font-size: 1.2rem;
+	}
+}
+
+pre.wp-block-code.snippet {
+	border-color: transparent;
+	padding: 0;
+	// padding: 10px;
+	border-radius: 4px;
+}
+
+
+//* SNIPPET
+//----------------------------------------------------*/
+.numpre {
+	code {
+		position: relative;
+		padding-left: 5rem !important;
+		&::before {
+			position: absolute;
+			display: block;
+			max-height: 100%;
+			width: 3rem;
+			text-align: right;
+			padding-right: 1rem;
+			border-right: 1px solid rgba(ex.$col-Fa,.4);
+			content: "1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A 51\A 52\A 53\A 54\A 55\A 56\A 57\A 58\A 59\A 60\A ";
+			color: rgba(ex.$col-Fa,.4);
+			left: .8rem;
+			top: .5rem;
+			bottom: 1rem;
+			overflow: hidden;
+			line-height: 1.6;
+			font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;
+			font-size: 1.2rem;
+			z-index: 0;
+		}
+	}
+}
+
+.mark {
+	background: rgba(132,160,198,.3);
+}
+
+
+.snippet {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 2rem 0;
+	line-height: 1.6;
+	max-width: 100%;
+	overflow-x: visible !important;
+	overflow: visible !important;
+	white-space: pre-wrap !important;
+	border-radius: 4px 4px 4px 4px;
+
+	// border-radius: 10rem;
+	// white-space: wrap !important;
+	// overflow: hidden;
+	code {
+		font-size: 18px;
+		padding: 18px;
+		width: 100%;
+		max-width: 100%;
+		border-radius: 4px;
+		// font-size: 1.2rem;
+		font-size: 18px;
+		color: #fff;
+		// color: ex.$col-Fa;
+		font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;
+		-moz-tab-size: 4;
+		-o-tab-size: 4;
+		tab-size: 4;
+	}
+	.btn {
+		position: absolute;
+		// -webkit-transition: opacity .2s ease-in-out;
+		// -o-transition: opacity .2s ease-in-out;
+		transition: opacity .2s ease-in-out;
+		opacity: .8;
+		padding: 8px 10px;
+		position: absolute;
+		border-radius: 0 4px 0 0;
+		border: 1px solid #2b303b;
+		border-top-right-radius: 4px;
+		// border-bottom-right-radius: 4px;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	.mark {
+		display: inline-block;
+		margin-left: -.5rem;
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+}
+
+.mark.up {
+	margin: 0 .5em;
+	padding: 0 .5em;
+}
+
+.hljs-keyword {
+	font-weight: 600;
+}
+
+.snippet .btn {
+	z-index: 1;
+	opacity: 0;
+	// opacity: 1;
+}
+
+.snippet:hover .btn,.snippet .btn:focus {
+	opacity: 1;
+}

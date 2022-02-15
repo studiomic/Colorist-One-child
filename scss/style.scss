@@ -14,6 +14,17 @@
 @use 'components/hover-line';
 
 @use 'helper/remove';
+@use 'helper/blog-form';
+
+
+//* Code Components
+@use 'code/primer-val';
+@use 'code/code-normalize';
+@use 'code/primer-btn';
+@use 'code/primer-tooltips';
+@use 'code/primer-plus';
+
+
 
 
 // @use 'blog/entries';
@@ -24,14 +35,6 @@
 // @use "project/blog-form";
 // @use "project/blog";
 
-
-// /* Code Components
-// ----------------------------------------------------*/
-// @use "code/primer-val";
-// @use "code/normalize";
-// @use "code/primer-btn";
-// @use "code/primer-tooltips";
-// @use "code/primer-plus";
 
 // @use "components/blockquote";
 // @use "components/table-of-content"; //mokuji

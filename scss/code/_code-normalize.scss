@@ -1,0 +1,50 @@
+
+// @use "../variables/index" as ex;
+@use "../base/index" as ex;
+
+$text-blue:#3CB3E4;
+
+.Blog,
+.singular {
+	input[type=text]:focus,
+	input[type=email]:focus,
+	input[type=url]:focus,
+	input[type=password]:focus,
+	input[type=search]:focus,
+	input[type=number]:focus,
+	input[type=tel]:focus,
+	input[type=date]:focus,
+	input[type=month]:focus,
+	input[type=week]:focus,
+	input[type=time]:focus,
+	input[type=datetime]:focus,
+	input[type=datetime-local]:focus,
+	input[type=color]:focus,
+	textarea:focus {
+	   color: currentcolor;
+		outline-offset: 0px;
+		outline: 1px solid $text-blue;
+	}
+	input[type=text]{
+		color: currentcolor;
+		outline-offset: 0px;
+		outline: 0;
+	}
+	pre {
+		overflow-x: visible;
+		white-space: pre-wrap;
+		font-size: 1.2rem;
+	}
+	input {
+	   margin: 0;
+	   font-size: 1.2rem;
+	   width: 100%;
+	   outline: 0;
+		border: 1px solid ex.$text-color;
+	}
+}
+
+
+
+
+// .wp-block-code .
