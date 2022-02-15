@@ -24,8 +24,13 @@
 @use 'code/primer-tooltips';
 @use 'code/primer-plus';
 
+//* layout
+@use 'block/layout';
+
+
 //* page
 @use 'block/info';
+@use 'block/blog-posts';
 
 
 

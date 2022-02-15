@@ -54,7 +54,12 @@
 	}
 }
 
-@media only screen and (max-width:63.99875em) {
+
+
+// /* 1024pxを含まずそれより小さいという表現ができる */
+@media not all and (min-width:64em) {
+// }
+// @media only screen and (max-width:63.99875em) {
 	.wave{
 		background: hsl(0,0%,95%);
 		canvas {
@@ -65,7 +70,7 @@
 }
 
 
-@media only screen and (min-width:64em) {
+@media (min-width:64em) {
 	.brand {
 		h1 {
 			letter-spacing: 1.8rem;

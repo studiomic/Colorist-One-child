@@ -51,7 +51,8 @@ footer {
 	}
 }
 
-@media only screen and (max-width:63.99875em) {
+// @media (max-width:63.99875em) {
+@media not all and (min-width:64em) {
 	footer {
 		padding: 0 20px 30px;
 		p {
@@ -74,7 +75,7 @@ footer {
 }
 
 
-@media only screen and (min-width:64em) {
+@media (min-width:64em) {
 	footer {
 		padding: 0 45px 45px;
 		div {

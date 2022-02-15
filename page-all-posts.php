@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
-<main>
-	<section class="all-titles">
+<main class="ind-page" id="content">
+	<section class="blos-posts">
+		<h2>ALL POSTS</h2>
 		<?php
 			$wp_query = new WP_Query();
 			$my_posts = array(
@@ -17,27 +18,20 @@
 			<article class="titles">
 				<div class="time-wrap">
 					<time datetime="<?php the_date(); ?>" class="flex">
-						<span class="front-day"><?php echo get_post_time('d'); ?></span><span><?php echo get_post_time('M'); ?> <?php echo get_post_time('Y'); ?></span>
+						<span class="front-day"><?php echo get_post_time('d'); ?></span><span>Mar 2018</span>
 					</time>
 				</div>
-				<h2><?php the_title(); ?></h2>
-				<p class="picat"><span><?php $categories = get_the_category();if ( $categories ) { echo $categories[0]->name; } ?></span></p>
+				<h3><?php the_title(); ?></h3>
+				<p class="picat"><?php $categories = get_the_category();if ( $categories ) { echo $categories[0]->name; } ?></p>
 			</article>
 		</a>
+
+
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</section>
 </main>
 
-	<!-- <?php get_template_part( 'footer/footer-insertop' ); ?> -->
-	<script>
-	ScrollReveal().reveal('.time-card', {
-		duration:1000,
-		origin:'bottom',
-		distance:'80px',
-		viewFactor:0.2,
-		reset:true
-		});
-	</script>
+
 
 <?php get_footer(); ?>
 

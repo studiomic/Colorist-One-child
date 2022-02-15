@@ -2,7 +2,7 @@
 
 <main class="information" id="content">
 	<section class="info">
-		<h2>INFORMATION</h2>
+	<h2>INFORMATION</h2>
 		<dl>
 			<?php
 			$wp_query = new WP_Query();
