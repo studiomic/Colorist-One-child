@@ -11,7 +11,8 @@
 
 @use 'helper/remove';
 @use 'helper/blog-form';
-
+@use "components/blockquote";
+@use "components/table-of-content"; //mokuji
 
 //* Code Components
 @use 'code/primer-val';

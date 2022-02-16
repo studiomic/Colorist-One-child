@@ -1,0 +1,40 @@
+
+@use "../base/index" as ex;
+
+
+/* blockquote SVG
+----------------------------------------------------*/
+.wp-block-quote,
+blockquote {
+	// &::before {
+	// 	content: '';
+	// }
+	p {
+		// border: 1px solid pink;
+		font-weight: normal;
+		background: url("../../../asset/svg/iconmonstr-quote-5.svg") no-repeat;
+		padding-left: 2rem;
+		a {
+			background : #fff url("../../../asset/svg/iconmonstr-share-11.svg") no-repeat 0 4px;
+			margin-left: -2rem;
+			padding-left: 2rem;
+			display: inline-block;
+		}
+	}
+}
+
+.right-quote {
+	p {
+		&::after {
+			content: '\00A0\00A0\00A0\00A0';
+			background: url("../svg/iconmonstr-quote-7.svg") no-repeat .5rem 0;
+			padding-left: 1rem;
+		}
+	}
+}
+
+a.link {
+	background: url("../svg/iconmonstr-share-8.svg") no-repeat 0 -3px;
+	background-size: 24px;
+	padding-left: 1.8rem;
+}

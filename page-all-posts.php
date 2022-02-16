@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="ind-page" id="content">
+<main class="allposts-page" id="content">
 	<section class="blos-posts">
 		<h2>ALL POSTS</h2>
 		<?php

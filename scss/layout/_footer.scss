@@ -4,16 +4,27 @@
 @use "../base/index" as ex;
 
 footer {
+	// border-top: 150px solid #fff;
 	position: relative;
-	margin-top: 100px;
+	margin-top: 150px;
 	background: var(--front--background-color);
 	color: var(--front--copyright-color);
+	// .wrapper {
+	// 	width: 100%;
+	// 	margin-top: 150px;
+
+	// }
 	canvas {
 		position: absolute;
+		// bottom: 0;
 		top: -150px;
+		// top: 0px;
 		left: 0;
 		width: 100%;
-		// z-index: 1;
+		z-index: 1;
+		height: 150px;
+	// border: 1px solid tomato;
+
 	}
 	h2 {
 		// position: relative;
@@ -23,6 +34,7 @@ footer {
 		font-family: var(--font-Family-Min);
 		display: block;
 		top: -80px;
+		// top: 0px;
 		font-weight: bold;
 		line-height: 1;
 		z-index: 2;

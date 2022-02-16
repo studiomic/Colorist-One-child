@@ -10,13 +10,15 @@
 ?>
 <footer>
 	<canvas id="waveCanvas1"></canvas>
-
 	<h2>Contents</h2>
 	<nav role="navigation" aria-label="main-navigation">
 		<ul class="nav">
 			<li>
 				<a href="/blog">Blog</a>
+				<span>&middot;</span>
 				<a href="/all-posts">All Posts</a>
+				<span>&middot;</span>
+				<a href="/entries">Entries</a>
 			</li>
 			<li><a href="/infomation">infomation</a></li>
 			<li><a href="#about">About</a></li>
@@ -56,17 +58,26 @@
 <script src="/asset/js/wave.js"></script>
 
 <?php wp_reset_query();?>
-<?php if(is_page('all-posts')) { ?>
-<script>
-	ScrollReveal().reveal('.time-card', {
-	duration:1000,
-	origin:'bottom',
-	distance:'80px',
-	viewFactor:0.2,
-	reset:true
-	});
-</script>
-<?php } ?>
-
+<?php if ( is_home() || is_page('entries') ) : ?>
+	<script>
+		ScrollReveal().reveal('.blog-card', {
+			duration:1200,
+			origin:'bottom',
+			distance:'80px',
+			viewFactor:0.2,
+			reset:true
+		});
+	</script>
+<?php elseif (is_page('all-posts')) : ?>
+	<script>
+		ScrollReveal().reveal('.time-card', {
+		duration:1000,
+		origin:'bottom',
+		distance:'80px',
+		viewFactor:0.2,
+		reset:true
+		});
+	</script>
+<?php endif; ?>
 </body>
 </html>

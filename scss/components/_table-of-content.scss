@@ -1,0 +1,64 @@
+
+@use "../base/index" as ex;
+
+/* mokuzi block
+----------------------------------------------------*/
+$csize: 4rem;
+.chambre {
+	position: relative;
+	&::before {
+		content: '章';
+		position: absolute;
+		display: block;
+		border-radius: 4%;
+		background: rgba(#1D6CAB,.4);
+		// font-family: ex.$fontFamilyMin;
+		color: ex.$col-Fa;
+		text-align: center;
+		line-height: $csize;
+		width: $csize;
+		height: $csize;
+		font-size: 2rem;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		// left: 0;
+		right: 0;
+		left: auto;
+	}
+	h3 {
+		display: none;
+	}
+	position: relative;
+	padding-bottom: 1rem;
+	background: rgba(ex.$blue,.1);
+	ul {
+		list-style: none;
+		padding: 0 4rem 0 1rem;
+	}
+	li {
+		// background: url("../svg/iconmonstr-layer-19.svg") no-repeat 0 6px;
+		background: url("../../../asset/svg/iconmonstr-layer-19.svg") no-repeat;
+		background-size: 18px;
+		padding-left: 1.4rem;
+		margin-bottom: .5rem;
+	}
+
+}
+
+/* Project Media
+----------------------------------------------------*/
+$csize: 6rem;
+@media (min-width:64em) {
+	.chambre {
+		&::before {
+			line-height: $csize;
+			width: $csize;
+			height: $csize;
+			font-size: 3rem;
+		}
+		ul {
+			padding: 0 2rem;
+		}
+	}
+}

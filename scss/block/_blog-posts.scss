@@ -2,12 +2,11 @@
 @use "../base/index" as ex;
 
 
-.ind-page {
+.allposts-page {
 	width: 90%;
 	// width: 768px;
 	margin: 1rem auto;
 	padding-bottom: 5rem;
-	// border: 1px solid tomato;
 }
 
 //* circleTime PostTitle ALL
@@ -85,13 +84,11 @@
 
 
 @media only screen and (min-width:64em) {
-	.ind-page {
+	.allposts-page {
 		width: 768px;
 		margin: 1rem auto;
 		padding-bottom: 5rem;
 	}
-
-
 	.blos-posts {
 		// padding: 5rem 4rem;
 		a {

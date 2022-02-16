@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<main class="Blog">
-	<section class="Entries">
-		<h1>ENTRIES</h1>
+<main class="ind-page" id="content">
+	<section class="blog-info">
+		<h2>BLOG ENTRIES</h2>
 		<article>
 			<?php
 				$wp_query = new WP_Query();

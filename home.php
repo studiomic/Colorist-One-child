@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <main class="home">
-		<section class="blog-info">
-			<article>
+	<section class="blog-info">
+		<article>
 <?php
 if ( have_posts() ) {
 	// Load posts loop.
@@ -17,22 +17,9 @@ if ( have_posts() ) {
 		get_template_part( 'template-parts/content/content-none' );
 	}
 ?>
-			</article>
-		</section>
-		<?php twenty_twenty_one_the_posts_navigation(); ?>
+		</article>
+	</section>
+<?php twenty_twenty_one_the_posts_navigation(); ?>
 </main>
-	
-	
-	
-	
-<script>
-	ScrollReveal().reveal('.blog-card', {
-		duration:1200,
-		origin:'bottom',
-		distance:'80px',
-		viewFactor:0.2,
-		reset:true
-	});
-</script>
 
 <?php get_footer(); ?>
