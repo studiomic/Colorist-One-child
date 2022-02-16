@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <main class="" id="content">
 	<section class="">
 		<h1>WORK</h1>

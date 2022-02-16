@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="home">
-		<section class="Entries">
+		<section class="blog-info">
 			<article>
 <?php
 if ( have_posts() ) {

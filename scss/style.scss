@@ -1,9 +1,5 @@
 // sass --watch --no-source-map scss/style.scss:../../../asset/css/style.css
-// sass --watch --no-source-map scss:/asset/css
-
-
-
-
+// sass --watch --no-source-map scss:../../../asset/css
 
 @use 'base/variable';
 @use 'base/normalize';
@@ -31,6 +27,7 @@
 //* page
 @use 'block/info';
 @use 'block/blog-posts';
+@use 'block/blog-info';
 
 
 

@@ -1,8 +1,13 @@
 // sass --watch --no-source-map scss/style-front.scss:asset/css/style-front.css
 // sass --watch --no-source-map scss:asset/css
 
-// @use "./index" as ex;
-// @use "index" as ex;
+// sass --watch --no-source-map scss/style.scss:../../../asset/css/style.css
+// sass --watch --no-source-map scss:/asset/css
+
+// @media not all and (min-width:64em) {
+// @media (min-width:64em) {1024
+// @media (min-width:75em) {1200
+// @media (min-width:87.5em) {1400
 
 :root {
 // Front Heading Color
@@ -10,7 +15,6 @@
 	--front--title-about-color: #978794;
 	--front--title-info-color: #8c8f6d;
 	--front--title-content-color: #3e4951;
-
 
 // Front Color
 	--front--footer-nav-color: #bec4da;
@@ -40,29 +44,20 @@
 	--front--title-size: calc(var(--font-size-default) * 3.75); //60px
 	--page--title-size: calc(var(--font-size-default) * 2.25); //36px
 
-
-	// --font-size-large:40px;
-	// --font-size-large: calc(var(--font-size-default) * var(--ratio-1));
-
-	// --front--title-size: calc(var(--font-size-default) * 4.75);
-	// --front--title-size: 60px;
-
-
 // Front Font Family
-	--front--Family-Base: HelveticaNeue-Light,'Helvetica Neue Light',sans-serif;
-	--font--Family-JP: 'Noto Sans JP', system-ui, sans-serif;
-	--front--Family-Min: 'Noto Serif JP', serif;
-	--front--Family-EN: 'Verdana', sans-serif;
-	--front--Family-OS: 'Open Sans', sans-serif;
-	--front--Family-Lato: 'Lato', 'Open Sans', sans-serif;
-	--front--Family-Sis: system-ui, sans-serif;
-	--front--Family-Geo: Georgia, serif;
+	--font-Family-Base: HelveticaNeue-Light,'Helvetica Neue Light',sans-serif;
+	--font-Family-JP: 'Noto Sans JP', system-ui, sans-serif;
+	--font-Family-Min: 'Noto Serif JP', serif;
+	--font-Family-EN: 'Verdana', sans-serif;
+	--font-Family-OS: 'Open Sans', sans-serif;
+	--font-Family-Lato: 'Lato', 'Open Sans', sans-serif;
+	--font-Family-Sis: system-ui, sans-serif;
+	--font-Family-Geo: Georgia, serif;
 
-
-
-
-
-
+// Blog Info figure height
+	--fig-hei-base: 220px;
+	--fig-hei-mid: 245px;
+	--fig-hei-lg: 280px;
 
 
 // Font Feature Settings
@@ -79,21 +74,11 @@
 // background: hsl(0,0%,100%);
 // background: #E1ABAE;
 // background: #EBBCBF;
-// background: rgba(ex.$blue,.1);
-// background: rgba(#222,.5);
 // background: rgba(#8FB8C9,.9);
 // background: rgba(#fff,.9);
 // background: rgba(#B2D3E0,.5);
 // background: rgba(#0f0f0f,.9);
-// color: ex.$col-Fa;
 // color: hsl(0,0%,60%);
-// padding: 4rem;
-// margin: 0 0 0 40px;
-
-	// background: rgba(#E1ABAE,.5);
-
-
-
 // 	/* Color */
 // 	--color-background: hsl(48, 48%, 93%);
 // 	--color-background-tone: hsl(48, 48%, 90%);

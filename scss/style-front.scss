@@ -3,18 +3,18 @@
 
 @use 'base/variable';
 @use 'base/normalize';
-@use 'front/body';
+// @use 'front/body';
 
-@use 'front/intro';
+// @use 'front/intro';
 @use 'components/scroll';
 
-@use 'front/layout';
-@use 'front/main';
-@use 'front/blog-posts';
+// @use 'front/layout';
+// @use 'front/main';
+// @use 'front/blog-posts';
 
 @use 'components/button';
-@use 'front/breakthrough';
-@use 'front/info';
+// @use 'front/breakthrough';
+// @use 'front/info';
 
 @use 'layout/footer-flat';
 @use 'components/hover-line';

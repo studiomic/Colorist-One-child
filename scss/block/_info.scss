@@ -21,11 +21,12 @@
 			left: 50%;
 			transform: translate( -50%, 0%);
 			content: '.....';
-			font-family: var(--front--Family-Sis);
+			font-family: var(--font-Family-Sis);
 			font-size: 4rem;
 			line-height: 1;
 			background: linear-gradient(to right, ex.$cyan 0%, ex.$cyan 19%, ex.$blue 20%,  ex.$blue 39%, ex.$purple 40%, ex.$purple 59%, ex.$orange 60%, ex.$orange 79%, ex.$green 80%, ex.$green 100%);
 			-webkit-text-fill-color: transparent;
+			background-clip: text;
 			-webkit-background-clip: text;
 			opacity: .7;
 		}
@@ -51,11 +52,12 @@
 			bottom: -3rem;
 			transform: translate( 0%, 0%);
 			content: '.....';
-			font-family: var(--front--Family-Sis);
+			font-family: var(--font-Family-Sis);
 			font-size: 4rem;
 			line-height: 1;
 			background: linear-gradient(to right, ex.$cyan 0%, ex.$cyan 19%, ex.$blue 20%,  ex.$blue 39%, ex.$purple 40%, ex.$purple 59%, ex.$orange 60%, ex.$orange 79%, ex.$green 80%, ex.$green 100%);
 			-webkit-text-fill-color: transparent;
+			background-clip: text;
 			-webkit-background-clip: text;
 			opacity: .7;
 		}
